@@ -4,6 +4,12 @@ DELAY 1000
 STRING cmd
 ENTER
 DELAY 500
+STRING netsh wlan delete profile name="webauth"
+ENTER
+STRING netsh wlan delete profile name="eduroam 2"
+ENTER
+STRING netsh wlan delete profile name="eduroam"
+ENTER
 STRING d:
 ENTER
 STRING e:
@@ -17,9 +23,10 @@ ENTER
 STRING i:
 ENTER
 STRING start win11.reg
-DELAY 900
+ENTER
+DELAY 1000
 LEFT
-DELAY 500
+DELAY 1000
 ENTER
 DELAY 500
 LEFT
